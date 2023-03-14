@@ -1,10 +1,11 @@
 //libreria HX711
 #include "HX711.h"
 
-// HX711 circuit wiring
+//pines celda
 #define DOUT_PIN 2
 #define SCK_PIN 3
 
+//objeto celda
 HX711 celda;
 
 void setup() {
@@ -31,5 +32,6 @@ void setup() {
 }
 
 void loop() {
+  //Se imprime el promedio de los ultimos 10 valores
   Serial.println(celda.read_average(10)); 
 }
