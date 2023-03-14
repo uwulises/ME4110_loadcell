@@ -47,7 +47,7 @@ datos_tiempo = x_data
 datos_carga = y_data
 
 # create a pandas DataFrame from the data
-df = pd.DataFrame({'Tiempo': datos_tiempo, 'Carga': y_data})
+df = pd.DataFrame({'Tiempo': datos_tiempo, 'Carga': datos_carga})
 
 # save the DataFrame to a CSV file
 df.to_csv('datos_celda.csv', index=False)
