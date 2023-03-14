@@ -12,14 +12,14 @@ void setup() {
   celda.begin(DOUT_PIN, SCK_PIN);
    if (celda.is_ready()) {
     celda.set_celda();    
-    Serial.println("Tare... remove any weights from the celda.");
+    Serial.println("NO COLOCAR NADA SOBRE LA CELDA PARA TARAR");
     delay(5000);
     celda.tare();
-    Serial.println("Tare done...");
-    Serial.print("Place a known weight on the celda...");
+    Serial.println("CELDA TARA");
+    Serial.print("COLOCAR MASA CONOCIDA");
     delay(2000);
     long reading = celda.read_average(10);
-    Serial.print("Result: ");
+    Serial.print("VALOR A UTILIZAR PARA FACTOR");
     Serial.println(reading);
     delay(5000);
   } 
