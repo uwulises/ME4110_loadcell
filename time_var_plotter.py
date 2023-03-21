@@ -2,10 +2,10 @@ import serial
 import matplotlib.pyplot as plt
 import time
 import pandas as pd
-ser = serial.Serial('COM5', 9600)  # replace with your serial port
+ser = serial.Serial('/dev/tty.wchusbserial14240', 9600)  # replace with your serial port
 
 ### --  factor obtenido de la celda -- ###
-factor = 0.5
+factor = 1
 
 plt.ion()
 fig, ax = plt.subplots()
